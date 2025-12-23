@@ -51,6 +51,8 @@ namespace Entrevista.DAL.Repositorios
             {
                 int ordId = reader.GetOrdinal("id");
                 int ordNombre = reader.GetOrdinal("nombre");
+                int ordApellido = reader.GetOrdinal("apellido");
+                int ordObservacion = reader.GetOrdinal("observacion");
                 int ordCreadoEn = reader.GetOrdinal("creado_en");
 
                 while (await reader.ReadAsync(ct))
@@ -58,8 +60,10 @@ namespace Entrevista.DAL.Repositorios
                     Elemento e = new Elemento();
                     e.Id = reader.GetInt64(ordId);
                     e.Nombre = reader.GetString(ordNombre);
+                    e.Apellido = reader.GetString(ordApellido);
+                    e.Apellido = reader.GetString(ordApellido);
+                    e.Observacion = reader.GetString(ordObservacion);
                     e.CreadoEn = reader.GetFieldValue<DateTimeOffset>(ordCreadoEn);
-
                     lista.Add(e);
                 }
             }
@@ -69,7 +73,7 @@ namespace Entrevista.DAL.Repositorios
             return lista;
         }
 
-        public async Task<long> CrearAsync(string nombre, CancellationToken ct)
+        public async Task<long> CrearAsync(string nombre, string apellido,string observacion, CancellationToken ct)
         {
             await using NpgsqlConnection conn = (NpgsqlConnection)_fabricaConexion.Crear();
             await conn.OpenAsync(ct);
@@ -78,6 +82,8 @@ namespace Entrevista.DAL.Repositorios
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("p_nombre", nombre);
+            cmd.Parameters.AddWithValue("p_apellido", apellido);
+            cmd.Parameters.AddWithValue("p_observacion", observacion);
 
             NpgsqlParameter pId = new NpgsqlParameter("p_id", NpgsqlDbType.Bigint);
             pId.Direction = ParameterDirection.Output;

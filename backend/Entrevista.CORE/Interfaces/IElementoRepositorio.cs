@@ -10,6 +10,6 @@ namespace Entrevista.CORE.Interfaces
     public interface IElementoRepositorio
     {
         Task<IReadOnlyList<Elemento>> ObtenerTodosAsync(CancellationToken ct);
-        Task<long> CrearAsync(string nombre, CancellationToken ct);
+        Task<long> CrearAsync(string nombre,string apellido,string observacion, CancellationToken ct);
     }
 }

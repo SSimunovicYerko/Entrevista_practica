@@ -38,7 +38,7 @@ namespace Entrevista.Controllers
                 return BadRequest(new { codigo = "400", mensaje = "Body requerido." });
             }
 
-            long id = await _servicio.CrearAsync(request.Nombre, ct);
+            long id = await _servicio.CrearAsync(request.Nombre, request.Apellido, request.Observacion, ct);
 
             return Created($"/api/elementos/{id}", new { id });
         }

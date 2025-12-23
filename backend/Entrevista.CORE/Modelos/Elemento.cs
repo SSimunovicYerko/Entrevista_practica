@@ -10,6 +10,8 @@ namespace Entrevista.CORE.Modelos
     {
         public long Id { get; set; }
         public string Nombre { get; set; } = "";
+        public string Apellido { get; set; } = "";
+        public string Observacion { get; set; } = "";
         public DateTimeOffset CreadoEn { get; set; }
     }
 }
