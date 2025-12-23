@@ -1,0 +1,6 @@
+@Entrevista_HostAddress = http://localhost:5237
+
+GET {{Entrevista_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

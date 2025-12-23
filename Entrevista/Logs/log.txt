@@ -1,0 +1,18 @@
+2025-12-23 09:14:10.824 -03:00 [WRN] Validación falló. TraceId: 0HNI23J01LFB4:00000009. Mensajes: El nombre es obligatorio.
+2025-12-23 09:14:49.344 -03:00 [WRN] Validación falló. TraceId: 0HNI23J01LFB4:0000000B. Mensajes: El nombre no puede superar 100 caracteres.
+2025-12-23 09:17:09.431 -03:00 [INF] GET /api/elementos
+2025-12-23 09:17:09.657 -03:00 [INF] GET /api/elementos
+2025-12-23 09:17:29.247 -03:00 [WRN] Validación falló. TraceId: 0HNI23KK5C8VR:00000007. Mensajes: El nombre no puede superar 100 caracteres.
+2025-12-23 10:13:51.265 -03:00 [INF] GET /api/elementos
+2025-12-23 10:14:18.361 -03:00 [INF] POST /api/elementos
+2025-12-23 10:14:22.163 -03:00 [INF] GET /api/elementos
+2025-12-23 10:14:28.963 -03:00 [WRN] Validación falló. TraceId: 0HNI24K9UD154:0000000F. Mensajes: El nombre es obligatorio.
+2025-12-23 10:14:48.595 -03:00 [WRN] Validación falló. TraceId: 0HNI24K9UD154:00000011. Mensajes: El nombre no puede superar 100 caracteres.
+2025-12-23 10:16:28.754 -03:00 [INF] GET /api/elementos
+2025-12-23 10:16:28.987 -03:00 [INF] GET /api/elementos
+2025-12-23 10:17:57.025 -03:00 [INF] GET /api/elementos
+2025-12-23 10:17:57.252 -03:00 [INF] GET /api/elementos
+2025-12-23 10:18:45.588 -03:00 [WRN] Validación falló. TraceId: 0HNI24MARH8JN:00000007. Mensajes: El nombre no puede superar 100 caracteres.
+2025-12-23 10:18:57.131 -03:00 [INF] POST /api/elementos
+2025-12-23 10:18:57.147 -03:00 [INF] GET /api/elementos
+2025-12-23 11:09:47.779 -03:00 [INF] GET /api/elementos

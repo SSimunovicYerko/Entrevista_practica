@@ -1,0 +1,36 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+
+# Test results
+TestResults/
+
+# NuGet
+**/packages/
+*.nupkg
+.nuget/NuGet.Config.user
+
+# Rider/VSCode (por si acaso)
+.idea/
+.vscode/
+
+# Frontend (si aplica)
+**/node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db

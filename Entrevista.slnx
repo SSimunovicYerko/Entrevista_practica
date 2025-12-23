@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Entrevista.BLL/Entrevista.BLL.csproj" />
+  <Project Path="Entrevista.CORE/Entrevista.CORE.csproj" />
+  <Project Path="Entrevista.DAL/Entrevista.DAL.csproj" />
+  <Project Path="Entrevista/Entrevista.csproj" />
+</Solution>
