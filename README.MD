@@ -1,4 +1,4 @@
-# Entrevista Fullstack (.NET 8 + React TS + PostgreSQL)
+# Entrevista Fullstack (.NET 8 + React TypeScript + PostgreSQL)
 
 Proyecto para entrevista técnica con:
 - **Backend:** API REST en **.NET 8** (arquitectura en capas: API / BLL / DAL / CORE)
@@ -10,33 +10,47 @@ Proyecto para entrevista técnica con:
 
 - `backend/` → solución .NET (API + capas)
 - `frontend/` → React + TypeScript (Vite)
-- `scripts/` → scripts SQL para crear esquema, tabla, procedimientos y permisos
+- `scripts/` → scripts SQL (schema, tabla, procedimientos y permisos)
+
+---
 
 ## Requisitos
 
 - .NET SDK 8
 - Node.js + npm
-- PostgreSQL (y pgAdmin opcional)
+- PostgreSQL (pgAdmin opcional)
 
 ---
 
-## Base de datos
+## 1) Base de datos (PostgreSQL)
 
-1. Ejecuta los scripts en `scripts/` en el orden indicado por sus nombres (o según tu orden).
-2. Verifica que el usuario de conexión exista y tenga permisos (GRANT).
+Los scripts están en `scripts/`. Ejecutar en este orden:
 
-> El backend usa `ConnectionStrings:Postgres` en `appsettings.json`.
+1. **Schema**
+   - Crear el schema `aplicacion`
+
+2. **Tabla**
+   - Crear la tabla `aplicacion.elementos`
+
+3. **Procedimientos**
+   - `aplicacion.elementos_crear(...)`
+   - `aplicacion.elementos_listar_cursor()`
+
+4. **Permisos (GRANT)**
+   - Permisos para el usuario de aplicación (por ejemplo `usuario_app`)
+
+> Nota: el backend usa `ConnectionStrings:Postgres` en `appsettings.json`.
 
 ---
 
-## Backend (.NET 8)
+## 2) Backend (.NET 8)
 
 ### Visual Studio
 1. Abrir la solución en `backend/`
 2. Ejecutar el proyecto API
 
 Swagger:
-- `https://localhost:7146/swagger` (puerto puede variar)
+- `https://localhost:7146/swagger` (el puerto puede variar)
 
 ### CLI (opcional)
 Dentro de `backend/`:
