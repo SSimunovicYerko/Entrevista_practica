@@ -57,3 +57,14 @@ Dentro de `backend/`:
 ```bash
 dotnet restore
 dotnet run --project Entrevista
+
+### Frontend
+
+1. Instalar dependencias (node_modules)
+npm install
+
+2. Crear archivo .env
+VITE_API_URL=https://localhost:7146
+
+3. Ejecutar
+npm run dev
