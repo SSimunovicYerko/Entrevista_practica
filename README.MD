@@ -52,14 +52,7 @@ Los scripts están en `scripts/`. Ejecutar en este orden:
 Swagger:
 - `https://localhost:7146/swagger` (el puerto puede variar)
 
-### CLI (opcional)
-Dentro de `backend/`:
-```bash
-dotnet restore
-dotnet run --project Entrevista
-
 Dentro de `frontend/`:
-```bash
 
 1. Instalar dependencias (node_modules)
 npm install
@@ -69,3 +62,12 @@ VITE_API_URL=https://localhost:7146
 
 3. Ejecutar
 npm run dev
+
+
+### CLI (opcional)
+Dentro de `backend/`:
+```bash
+dotnet restore
+dotnet run --project Entrevista
+
+
