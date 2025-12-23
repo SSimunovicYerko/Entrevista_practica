@@ -58,7 +58,8 @@ Dentro de `backend/`:
 dotnet restore
 dotnet run --project Entrevista
 
-### Frontend
+Dentro de `frontend/`:
+```bash
 
 1. Instalar dependencias (node_modules)
 npm install
